@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/coliseu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Coliseu</title>
+</head>
+<body>
+     <!------------------Nav bar-------------------->
+    <nav>
+      <div>
+        <ul class="container">
+          <li class="home">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="disabled">
+            <p>Projeto da Disciplina</p>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0)">Maravilhas</a>
+            <ul class="dropdown-item">
+              <li><a class="dropdown-item" href="chichenitza.html">Chichén Itzá</a></li>
+              <li><a class="dropdown-item" href="coliseu.html">Coliseu</a></li>
+              <li><a class="dropdown-item" href="cristo.html">Cristo Redentor</a></li>
+              <li><a class="dropdown-item" href="machupicchu.html">Machu Picchu</a></li>
+              <li><a class="dropdown-item" href="muralhadachina.html">Muralha da China</a></li>
+              <li><a class="dropdown-item" href="ruinaspetra.html">Ruínas de Petra</a></li>
+              <li><a class="dropdown-item" href="tajmahal.html">Taj Mahal</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0)">Participantes</a>
+            <ul class="dropdown-item">
+              <li><a class="dropdown-item" href="#">João Felipe Silva Freitas</a></li>
+              <li><a class="dropdown-item" href="#">Laiza Leal de Souza</a></li>
+              <li><a class="dropdown-item" href="#">Lara Diniz Santana</a></li>
+              <li><a class="dropdown-item" href="#">Lucca Brito Moura</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0)">Professor</a>
+            <ul class="dropdown-item">
+              <li><a class="dropdown-item" href="#">Felipe dos Anjos Lima</a></li>
+            </ul>
+          </li>
+            <input id="searchbar" type="text" placeholder="Pesquisar maravilha" label="Pesquisar">
+            <button id="pesquisabtn" type="button" onclick="pesquisar()" >Pesquisar</button>
+          <div class="maravilhas-container">
+            <ul>
+              <li class="maravilha" style="display: none;"><a href="#">Chichén Itzá</a></li>
+              <li class="maravilha" style="display: none;"><a href="#">Coliseu</a></li>
+              <li class="maravilha" style="display: none;"><a href="#">Cristo Redentor</a></li>
+              <li class="maravilha" style="display: none;"><a href="#">Machu Picchu</a></li>
+              <li class="maravilha" style="display: none;"><a href="#">Muralha da China</a></li>
+              <li class="maravilha" style="display: none;"><a href="#">Ruinas de Petra</a></li>
+              <li class="maravilha" style="display: none;"><a href="#">Taj Mahal</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    
+    <h1>Coliseu</h1>
+    <div class="content-container">
+      <!-- Carrossel -->
+      <div class="maravilha-container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2017/04/24/coliseu-istock-517087146.jpg" class="d-block w-100 minha-imagem" alt="Imagem 1">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://mundovastomundo.com.br/wp-content/uploads/2018/11/coliseu1-e1542290210918.jpg" class="d-block w-100 minha-imagem" alt="Imagem 2">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://static.dw.com/image/54916911_605.jpg" class="d-block w-100 minha-imagem" alt="Imagem 3">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.getyourguide.com/img/tour/76d4839d16c7a34c.jpeg/98.jpg" class="d-block w-100 minha-imagem" alt="Imagem 4">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <br>
+      <h2>Descrição</h2>
+      <p class="description"><strong>País: Itália</strong></p>
+      <br>
+      <div>
+        <p><strong>Resumo:</strong> Também conhecido como Anfiteatro Flaviano, o Coliseu é um antigo anfiteatro romano 
+            em Roma, que podia acomodar até 80.000 espectadores. Era o local de gladiadores, corridas de bigas e 
+            outros eventos espetaculares da Roma Antiga</p>
+      </div>
+    </div>
+    
+        
+    <div id="footer">
+      <footer>
+        <a href="#" id="voltar-ao-topo">Voltar ao Topo</a>
+    
+        <!-- Botao para mudar de cor -->
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l.387 1.162a.217.217 0 0 1 0 .412l-1.162.387a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+          </symbol>
+        </svg>
+    
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                  id="bd-theme"
+                  type="button"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                  aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+    
+
+    <script src="js/todas.js"></script>
+</body>
+</html>
