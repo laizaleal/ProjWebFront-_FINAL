@@ -146,6 +146,7 @@ footer {
   align-items:center;
   position: fixed;
   margin-left: 100px;
+  margin-top: 25px;
   transition: opacity 0.3s ease;
   }
 /* -----------Style do nav bar-----------------*/
