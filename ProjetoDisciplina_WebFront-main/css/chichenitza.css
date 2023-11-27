@@ -1,12 +1,12 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: #d5d5d5 ;
+  height: 100vh;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button-container {
@@ -51,28 +51,6 @@ img{
     width: 500px;
     height: auto;
 }
-.minha-imagem{
-    width: 350px;
-    height: 400px;
-    object-fit:cover;
-}
-
-.bd-mode-toggle {
-    background-color: #1669f0;
-    border-radius: 10px;
-}
-
-  /* Estilos para o tema dark */
-[data-theme="dark"] {
-    background-color: #333; /* Fundo escuro */
-    color: #fff; /* Texto branco */
-}
-
-/* Estilos para o tema light */
-[data-theme="light"] {
-    background-color: #fff; /* Fundo claro */
-    color: #333; /* Texto escuro */
-}
 
 .carousel-inner img {
   width: 100%;
@@ -89,8 +67,9 @@ img{
 }
 
 footer {
-  background-color: #d7d7d7;
+  border-top: 1px solid #333;
   bottom: 0;
+  left: 0;
   height: 40px;
   position: fixed;
   width: 100%;
@@ -105,16 +84,6 @@ footer {
   position: fixed;
   transition: opacity 0.3s ease;
   }
-body {
-    height: 100vh;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 h1, h2 {
     margin: 20px 0;
@@ -185,16 +154,19 @@ color: #0f2135
     color: #333; /* Texto escuro */
 }
 
+
 #footer {
   width: 100%;
   bottom: 0;
 }
-#voltar-ao-topo {
-  text-decoration: none;
+
+footer {
+  background-color: #d7d7d7;
   color: #333;
-  font-weight: bold;
-  cursor: pointer;
+  padding: 20px;
+  text-align: center;
 }
+
 /* -----------Style do nav bar-----------------*/
 * {
     font-family: sans-serif;
