@@ -74,23 +74,13 @@ img{
   color: #333; /* Texto escuro */
 }
 
-
-#footer {
-  border-top: 1px solid #333;
+footer {
+  background-color: #d7d7d7;
   bottom: 0;
   left: 0;
   height: 40px;
   position: fixed;
   width: 100%;
-  flex-shrink: 0;
-}
-
-footer {
-  background-color: #d7d7d7;
-  color: #333;
-  padding: 0px;
-  text-align: center;
-  flex-shrink: 0;
 }
 
 #voltar-ao-topo {
@@ -98,11 +88,12 @@ footer {
   color: #333;
   font-weight: bold;
   cursor: pointer;
-  align-items: center;
+  align-items:center;
   position: fixed;
+  margin-left: 100px;
+  margin-top: 10px;
   transition: opacity 0.3s ease;
-  flex-shrink: 0;
-}
+  }
 body {
   height: 100vh;
   color: #fff;
@@ -182,36 +173,6 @@ color: #0f2135
   background-color: #fff; /* Fundo claro */
   color: #333; /* Texto escuro */
 }
-
-
-
-#footer {
-  border-top: 1px solid #333;
-  bottom: 0;
-  left: 0;
-  height: 40px;
-  position: fixed;
-  width: 100%;
-}
-
-footer {
-  border-top: 1px solid #333;
-  bottom: 0;
-  left: 0;
-  height: 40px;
-  position: fixed;
-  width: 100%;
-}
-
-#voltar-ao-topo {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  cursor: pointer;
-  align-items: center;
-  position: fixed;
-  transition: opacity 0.3s ease;
-  }
 
 /* -----------Style do nav bar-----------------*/
 * {

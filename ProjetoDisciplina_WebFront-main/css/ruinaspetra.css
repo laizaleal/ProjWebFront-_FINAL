@@ -57,17 +57,8 @@ img{
   height: 100%;
 }
 
-#footer {
-  border-top: 1px solid #333;
-  bottom: 0;
-  left: 0;
-  height: 40px;
-  position: fixed;
-  width: 100%;
-}
-
 footer {
-  border-top: 1px solid #333;
+  background-color: #d7d7d7;
   bottom: 0;
   left: 0;
   height: 40px;
@@ -80,11 +71,12 @@ footer {
   color: #333;
   font-weight: bold;
   cursor: pointer;
-  align-items: center;
+  align-items:center;
   position: fixed;
+  margin-left: 100px;
+  margin-top: 10px;
   transition: opacity 0.3s ease;
   }
-
 h1, h2 {
     margin: 20px 0;
     font-size:32px;
@@ -152,19 +144,6 @@ color: #0f2135
 [data-theme="light"] {
     background-color: #fff; /* Fundo claro */
     color: #333; /* Texto escuro */
-}
-
-
-#footer {
-  width: 100%;
-  bottom: 0;
-}
-
-footer {
-  background-color: #d7d7d7;
-  color: #333;
-  padding: 20px;
-  text-align: center;
 }
 
 /* -----------Style do nav bar-----------------*/
